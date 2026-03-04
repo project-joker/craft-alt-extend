@@ -1,0 +1,33 @@
+{% import '_includes/forms.twig' as forms %}
+
+{{ forms.textField({
+    label: 'Text',
+    instructions: 'The text to append or prepend to alt attributes.',
+    id: 'text',
+    name: 'text',
+    value: settings.text,
+    required: true,
+    errors: settings.getErrors('text'),
+}) }}
+
+{{ forms.selectField({
+    label: 'Position',
+    instructions: 'Where to place the text relative to the alt attribute.',
+    id: 'position',
+    name: 'position',
+    value: settings.position,
+    options: [
+        { label: 'Suffix', value: 'suffix' },
+        { label: 'Prefix', value: 'prefix' },
+    ],
+    errors: settings.getErrors('position'),
+}) }}
+
+{{ forms.textField({
+    label: 'Separator',
+    instructions: 'The separator between the alt text and the configured text.',
+    id: 'separator',
+    name: 'separator',
+    value: settings.separator,
+    errors: settings.getErrors('separator'),
+}) }}
