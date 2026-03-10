@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.svg" alt="Alt Extend for Craft CMS" width="100%">
+  <img src="https://raw.githubusercontent.com/project-joker/craft-alt-extend/main/banner.svg" alt="Alt Extend for Craft CMS" width="100%">
 </p>
 
 # Alt Extend
